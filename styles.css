@@ -1,0 +1,139 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2d2d2d;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/diagmonds-light.png');
+    background-repeat: repeat;
+}
+
+/* Container do Formulário */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilo do Wrapper do Formulário */
+.form-wrapper {
+    background-color: #3e3e3e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    border: 3px solid #5a5a5a;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Detalhes Rústicos */
+.form-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #d69d3e, #3e3e3e);
+}
+
+.form-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #3e3e3e, #d69d3e);
+}
+
+/* Título do Formulário */
+.form-wrapper h2 {
+    margin-bottom: 20px;
+    color: #d69d3e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estilo dos Grupos de Formulários */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo das Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #d69d3e;
+    text-transform: uppercase;
+}
+
+/*texto de password*/
+.form-span {
+    font-size: 10px;
+    color: #d69e3e;
+    text-transform: uppercase;
+}
+
+/*texto nome foto*/
+.foto {
+    font-size: 15px;
+    color: #d69e3e;
+    text-transform: uppercase;
+}
+
+/*import do arquivo*/
+.foto_dois {
+    font-size: 9px;
+    color: #d69e3e;
+    text-transform: uppercase;
+}
+
+/* Estilo dos Inputs */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid #5a5a5a;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+/* Estilo do Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #d69d3e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #b5842b;
+    transform: translateY(-2px);
+}
+
+/* Efeito de Foco nos Inputs */
+.form-group input:focus {
+    border-color: #d69d3e;
+    outline: none;
+}
